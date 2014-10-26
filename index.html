@@ -18,8 +18,7 @@
     <link rel="shortcut icon" type="image/x-con" href="img/favicon/favicon.jpg">
 
 		<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="path_to_js/idangerous.swiper-1.x.min.js"></script>
-  <script src="path_to_js/idangerous.swiper.scrollbar-1.x.js"></script>
+
 		<title>Open Car</title>
 	</head>
 
@@ -34,11 +33,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>!-->
-        <!--<span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>!-->
+      
       </button>
       <div class="centered">
       <a class="logo" href="index.html" title="location et vente de voiture entre particulier avec Open car">
@@ -46,47 +41,101 @@
 			</a>
       </div>
     </div>
+
+
+
+
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-<li><a href="#">Action</a></li>
-<li><a href="#">Another action</a></li>
-<li><a href="#">Something else here</a></li>
-<li class="divider"></li>
-<li><a href="#">Separated link</a></li>
-<li class="divider"></li>
-<li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>!-->
-      <span class="visible-md-inline">
+   
+ <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+     
+      <span class="visible-md-inline visible-lg-inline">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="formulaire.html">Inscription</a></li>
-        </span>
-       <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-<li><a href="#">Action</a></li>
-<li><a href="#">Another action</a></li>
-<li><a href="#">Something else here</a></li>
-<li class="divider"></li>
-<li><a href="#">Separated link</a></li>
-          </ul>
-        </li>!-->
-      </ul>
+        
+        
+    <!-- Button trigger modal -->
+<li><button id="button-custom" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Inscription
+</button>
+
+<!-- Modal displayed when a user clicks on the upper button -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inscription à Open Car</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+        <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Nom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Prénom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email*</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Confirmation de l’adresse e-mail*</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Pseudo Open Car*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Mot de passe*</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Confirmer le mot de passe*</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+ <p> Les champs signalés par * sont obligatoires.</p>
+</form>
+      </div>
+      <div class="modal-footer">
+        <a href="http://open-car.vv.si/"> <button type="button" class="btn btn-primary">Sign In</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+</ul>
+</span>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+
 
 </nav>
 </div> <!-- END CONTAINER -->
@@ -106,7 +155,85 @@
                 
 	            	<p class="ombre">Louer votre véhicule ou vendez-le !</p>
                 <div class="centered">
-	           	 		<a class="btn btn-primary btn-lg" href="formulaire.html">Inscription</a>
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Inscription
+</button>
+
+<!-- Modal displayed when a user clicks on the upper button -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inscription à Open Car</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+        <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Nom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Prénom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email*</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Confirmation de l’adresse e-mail*</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Pseudo Open Car*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Mot de passe*</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Confirmer le mot de passe*</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+ <p> Les champs signalés par * sont obligatoires.</p>
+</form>
+      </div>
+      <div class="modal-footer">
+        <a href="http://open-car.vv.si/"> <button type="button" class="btn btn-primary">Sign In</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	           	 		
                 </div>  
 	            
 	        </div>
@@ -235,7 +362,7 @@ Il ne vous reste plus qu'à évaluer le locataire en ligne et profiter de l'arge
             <div class="col-md-6">
                 <h3>Nicolas</h3>
                 
-                	<p>"En galère à quelques heures d'un weekend sans moyen de locomotion, nous nous sommes tournés pour la première fois vers Open car et Stéphane. Très réactif, pédagogue et arrangeant, cette première expérience a été concluante et nous n'hésiterons pas à renouveler l'expérience ! Le véhicule est en très bon état, bonne conduite, faible consommation, bref parfait pour une location simple, ponctuelle et sympa à petit prix."</p>
+                	<p>"En galère à quelques heures d'un weekend sans moyen de locomotion, nous nous sommes tournés pour la première fois vers Open car et Stéphane. Très réactif, pédagogue et arrangeant, cette première expérience a été concluante et nous n'hésiterons pas à renouveler l'expérience !"</p>
 
                 		<img src="img/jeune-cadre-150x150.jpg" class="img-responsive" alt="image d'un jeune cadre"></p>
             
@@ -244,6 +371,90 @@ Il ne vous reste plus qu'à évaluer le locataire en ligne et profiter de l'arge
         </div>
         <!-- .row -->
 </div> <!--end container!-->
+
+<section class="cta-footer">
+<!-- Button trigger modal -->
+<div class="center">
+<div class="container">
+<button id="marge-cta-footer" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Inscription
+</button>
+
+<!-- Modal displayed when a user clicks on the upper button -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inscription à Open Car</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+        <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Nom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+<div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Prénom*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email*</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-3 control-label">Confirmation de l’adresse e-mail*</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+  <label for="inputEmail3" class="col-sm-2 control-label">Pseudo Open Car*</label>
+  <div class="col-sm-10">
+  <input type="text" class="form-control" id="usr">
+  </div>
+</div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Mot de passe*</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-3 control-label">Confirmer le mot de passe*</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+ <p> Les champs signalés par * sont obligatoires.</p>
+</form>
+      </div>
+      <div class="modal-footer">
+        <a href="http://open-car.vv.si/"> <button type="button" class="btn btn-primary">Sign In</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
         <!-- Footer -->
         <footer>
        <div class="container">
@@ -262,9 +473,9 @@ Il ne vous reste plus qu'à évaluer le locataire en ligne et profiter de l'arge
               
                 <div class="col-xs-5">
                     <h4>Suivre Open Car</h4>
-						<p><i class="fa fa-facebook-square fa-2x"></i>
+						<a href="https://www.facebook.com/beg.najib" target="_blank"><p><i class="fa fa-facebook-square fa-2x"></i></a>
 							
-							<i class="fa fa-twitter-square fa-2x"></i>
+							<a href="https://twitter.com/bejibna" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 							
 							
 						</p>

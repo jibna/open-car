@@ -40,7 +40,7 @@ text-shadow: 0px 0px 7px rgba(0,0,0,0.75);}
 }
 
 footer{background-color: #f5f5f5;
-margin-top: 15px;}
+}
 
 h4{
 	color:#2da7d8;
@@ -63,7 +63,7 @@ ul{list-style: none;}
 
 .ombre{
 color: #428bca;
-text-shadow:0px 0px 7px rgba(0,0,0,0.75);
+text-shadow:0px 0px 0px rgba(0,0,0,0.75);
 }
 
 /*
@@ -77,13 +77,21 @@ text-shadow: 0px 0px 7px rgba(0,0,0,0.75);}
 .visible-md-inline{
 	display:inline;
 }
-
+.center
+{
+	    text-align:center;
+}
+.cta-footer{
+	background-color: #2D3D7D;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 @media (max-width:320px) {  /*small mobile*/
   h1 {
     font-size: 200%;
     color: #ffffff; 
   }
-  a.btn.btn-primary.btn-lg{
+  button.btn.btn-primary.btn-lg{
   	margin-bottom: 104px;
   	margin-top: 60px;
   }
@@ -95,29 +103,58 @@ text-shadow: 0px 0px 7px rgba(0,0,0,0.75);}
     text-align:center;
 }
   #home {
-	background-image: url(img/header/background-header-1920x350.jpg);}
+	background-image: url(img/header/background-header-320x430.jpg);}
 
 .btn-primary{
 	background-color: #2da7d8;
 }
-
+.cta-footer{
+	background-color: #2D3D7D;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#marge-cta-footer{
+	margin:50px;
+}
 }
 @media (min-width:321px) and (max-width:959px) {  /*tablet*/
+   #home {
+	background-image: url(img/header/background-header-800x430.jpg);}
   .centered
 {
     text-align:center;
 }
-a.btn.btn-primary.btn-lg{
+button.btn.btn-primary.btn-lg{
   	margin-bottom: 130px;
   	margin-top: 60px;
   }
   .margin-mob{
-  	margin-top:340px;
+  	margin-top:341px;
   }
+  button#button-custom {
+background-color: #ffffff;
+color: #2da7d8;
+border: none;
+line-height: 27px;
+}
+ .cta-footer{
+	background-color: #2D3D7D;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#marge-cta-footer{
+	margin:50px;
+}
 }
 @media (min-width:960px) and (max-width:1599px) {  /*desktop*/
 .visible-md-block{
 	display:block;
+}
+button#button-custom {
+background-color: #ffffff;
+color: #2da7d8;
+border: none;
+line-height: 27px;
 }
 }
 @media (min-width:1600px) {  /*desktop and tv*/
